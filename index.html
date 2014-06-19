@@ -3,20 +3,72 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Tux-Anuncios | SloganSloganSlogan</title>
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/tux-anuncios.css">
 </head>
 <body>
+<!-- Header -->
  <header>
  	<div class="logo">
- 		<img src="img/logo.png" alt="Tux-Anuncios"></div>
- 	<div class="btn-naranja"></div>
+ 		<img src="img/logo.png" alt="Tux-Anuncios">
+ 	</div>
+ 	<div class="derecha">
+ 		<button class="btn naranja">Log-In</button>
+ 	</div>
  </header>
- <section>
-
+ <!-- Header -->
+<!-- contenedor principal -->
+<section class="contenedor">
+	<!-- Anuncio random -->
+  	<section class="anuncio-clasificado">Visita a {Empresa X}, tiene anuncios que podrian interesarte.
+  	</section>
+  	<!-- Anuncio random -->
+  	<!-- parte celeste -->
+  	<section class="seccion-cabezera">
+  		<img src="img/logo.png" alt="Tux-Anuncios" class="logo-grande">
+  		<input type="text" placehold="¿Que estas buscando?">
+  		<span>icono</span>
+  	</section>
+  	<!-- parte celeste -->
+  	<!-- empresas destacadas -->
+  	<section class="empresas-destacadas">
+  		<h2>Empresas Destacadas</h2>
+  		<!-- esta es la ficha de la empresa -->
+  		<div class="ficha-empresa">
+  			<div class="ficha-cabezera">
+  				<img src="img/empresa.png" alt="Empresa-Patito">
+  				<h3>Nombre de la empresa Patito</h3>
+  			</div>
+  			<div class="ficha-menu">
+  				<div class="visitas">
+  					<span>Icono Ojo</span>
+  					<h4>{N-Visitas} Visitas</h4>
+  				</div>
+  				<div class="favoritos">
+  					<span>Icono Corazon</span>
+  					<h4>{N-Favoritos} Favoritos</h4>
+  				</div>
+  				<div class="Anuncios">
+  					<span>Icono Ojo</span>
+  					<h4>{N-Anuncios} Anuncios</h4>
+  				</div>
+  			</div>
+  			<div class="ficha-cuerpo">
+  				<h2>Descripcion</h2>
+  				<p>
+  					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis repellendus, adipisci rem earum distinctio, consequatur nesciunt.
+  				</p>
+  				<button class="btn naranja">Visitar Empresa</button>
+  			</div>
+  		</div>
+  		<!-- termina una ficha -->
+  	</section>
+  	<!-- empresas destacadas -->
  </section>
+ <!-- contenedor principal -->
  <footer>
  	<h3>
- 		<strong class="power">Power By Fire</strong>
+ 		<strong class="power">Power By ASD</strong>
  		<span class="copyright">copyright</span>
  	</h3>
  </footer>

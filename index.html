@@ -8,14 +8,14 @@
 </head>
 <body>
 <!-- Header -->
- <header>
+<header>
  	<div class="logo">
  		<img src="img/logo.png" alt="Tux-Anuncios">
  	</div>
- 	<div class="derecha">
- 		<button class="btn naranja">Log-In</button>
+ 	<div class="derecha right">
+ 	<button class="btn naranja ">Log-In</button>
  	</div>
- </header>
+</header>
  <!-- Header -->
 <!-- contenedor principal -->
 <section class="contenedor">
@@ -25,14 +25,20 @@
   	<!-- Anuncio random -->
   	<!-- parte celeste -->
   	<section class="seccion-cabezera">
-  		<img src="img/logo.png" alt="Tux-Anuncios" class="logo-grande">
-  		<input type="text" placehold="¿Que estas buscando?">
-  		<span>icono</span>
+  		<div class="logo-grande">
+  			<img src="img/logo.png" alt="Tux-Anuncios">
+  		</div>
+  		<div class="buscador">	
+  			<input type="text" placeholder="¿Que estas buscando?">
+  			<a href="#" class="buscar">+</a>
+  		</div>
   	</section>
   	<!-- parte celeste -->
   	<!-- empresas destacadas -->
-  	<section class="empresas-destacadas">
+  	<div class="titulos">
   		<h2>Empresas Destacadas</h2>
+  	</div>
+  	<section class="empresas-destacadas">
   		<!-- esta es la ficha de la empresa -->
   		<div class="ficha-empresa">
   			<div class="ficha-cabezera">
@@ -40,17 +46,42 @@
   				<h3>Nombre de la empresa Patito</h3>
   			</div>
   			<div class="ficha-menu">
-  				<div class="visitas">
+  				<div class="caja visitas">
   					<span>Icono Ojo</span>
-  					<h4>{N-Visitas} Visitas</h4>
-  				</div>
-  				<div class="favoritos">
+  					<h4>100 Visitas</h4>
+  				</div><div class="caja favoritos">
   					<span>Icono Corazon</span>
-  					<h4>{N-Favoritos} Favoritos</h4>
-  				</div>
-  				<div class="Anuncios">
+  					<h4>100 Favoritos</h4>
+  				</div><div class="caja anuncios">
   					<span>Icono Ojo</span>
-  					<h4>{N-Anuncios} Anuncios</h4>
+  					<h4>100 Anuncios</h4>
+  				</div>
+  			</div>
+  			<div class="ficha-cuerpo">
+  				<h2>Descripcion</h2>
+  				<p>
+  					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis repellendus, adipisci rem earum distinctio, consequatur nesciunt.
+  				</p>
+  				<button class="btn naranja">Visitar Empresa</button>
+  			</div>
+  		</div>
+  		<!-- termina una ficha -->
+  		<!-- esta es la ficha de la empresa -->
+  		<div class="ficha-empresa">
+  			<div class="ficha-cabezera">
+  				<img src="img/empresa.png" alt="Empresa-Patito">
+  				<h3>Nombre de la empresa Patito</h3>
+  			</div>
+  			<div class="ficha-menu">
+  				<div class="caja visitas">
+  					<span>Icono Ojo</span>
+  					<h4>100 Visitas</h4>
+  				</div><div class="caja favoritos">
+  					<span>Icono Corazon</span>
+  					<h4>100 Favoritos</h4>
+  				</div><div class="caja anuncios">
+  					<span>Icono Ojo</span>
+  					<h4>100 Anuncios</h4>
   				</div>
   			</div>
   			<div class="ficha-cuerpo">

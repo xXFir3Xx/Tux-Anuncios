@@ -1,20 +1,145 @@
 /* Patron de colores App Tux-Anuncios */
-verde-claro = #169389
-gris = #E7EAEE
-rosa = #C55580
-rosa-fuerte = #BF2D5E
+verde-claro = #1fbba6
+gris = #FFFFFF
+gris-obscuro = #CCC
+rosa = #CC6699
+rosa-fuerte = #CC3366
 rojo = #A01127
-naranja = #D9923D
-celeste = #259EB6
-azul = #3A598B
+naranja = #f9ab2e
+celeste = #37cde7
+azul = #336699
 
 body
 	background gris
+	font-family Arial
+	font-size 16px
 .btn 
-	border 1px solid white
+	border 0
 	color white
-	text-transform uppercase
+	border-radius 5px
+	font-weight bold
+
 	&.naranja
 		background naranja
+		padding 0.5em 1em
+		
 header
 	background verde-claro
+	border-bottom solid 5px rgba(0,0,0,0.3)
+	color white
+	padding 0.5em
+
+	.logo
+		display inline-block
+		img
+			width 60px
+	.derecha
+		padding 0.5em
+
+.contenedor
+	
+
+	.anuncio-clasificado
+		display none
+
+	.seccion-cabezera
+		background celeste
+
+		.logo-grande
+			text-align center
+			padding 1em 0 1em 0
+
+			img
+				width 150px
+	.buscador
+		text-align center
+		input
+			border 1.5px dashed  rgba(0,0,0,0.2) 
+			border-radius 5px
+			font-weight bold
+			font-size 0.5em
+			width 60%
+			padding 0.5em
+			margin 0 0 1em 0
+			.buscar
+				top 10px
+				right 10px
+	.titulos
+		margin 1em
+		border-bottom 2px solid verde-claro
+		h2
+			color celeste
+			font-size 1em
+	.empresas-destacadas
+		.ficha-empresa
+			background white
+			border 1px solid gris-obscuro
+			border-radius 5px
+			margin 0 0.5em
+
+					
+			.ficha-cabezera
+				background verde-claro
+				border-radius 5px 5px 0px 0px
+				text-align center
+				display block
+				margin 0
+
+				img
+					width 50px
+					border 5px solid  rgba(255,255,255,0.3) 
+					border-radius 50%
+					margin 0.5em
+
+				h3
+					color white
+					font-size 0.8em
+					text-align center
+					padding 0 0 1em 0
+					margin 0
+
+			.ficha-menu
+				display block
+				margin 0
+				.caja
+					color white
+					font-size 0.8em
+					width 33.3%
+					display inline-block
+					text-align center
+					
+
+					&.visitas
+						background rosa-fuerte
+						
+					&.favoritos
+						background naranja
+						
+					&.anuncios 
+						background azul
+			.ficha-cuerpo
+				display block
+				margin 0
+				text-align center
+				h2
+					color gris-obscuro
+					margin 0
+					padding 0.5em
+				p 
+					text-align justify
+					padding 0.5em
+				button
+					margin-bottom 0.5em
+footer
+	background verde-claro
+	margin-top 1em
+	position absolut
+	h3
+		color white
+		margin 0
+
+.left
+	float left
+
+.right
+	float right

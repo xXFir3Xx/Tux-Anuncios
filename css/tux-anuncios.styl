@@ -1,3 +1,18 @@
+@import 'nib'
+@import 'nib/vendor'
+
+@font-face {
+	font-family: 'iconos';
+	src:url('../fonts/icomoon.eot?7nwjnf');
+	src:url('../fonts/icomoon.eot?#iefix7nwjnf') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?7nwjnf') format('woff'),
+		url('../fonts/icomoon.ttf?7nwjnf') format('truetype'),
+		url('../fonts/icomoon.svg?7nwjnf#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+// Prefijos propietarios
+vendor-prefixes = o ms moz webkit official
 /* Patron de colores App Tux-Anuncios */
 verde-claro = #1fbba6
 gris = #FFFFFF
@@ -61,9 +76,15 @@ header
 			width 60%
 			padding 0.5em
 			margin 0 0 1em 0
-			.buscar
-				top 10px
-				right 10px
+		.buscar
+			text-decoration none
+			color gris
+			&:before
+				font-family iconos
+				font-size 1.5em
+				content "\e609"
+				
+					
 	.titulos
 		margin 1em
 		border-bottom 2px solid verde-claro
@@ -75,7 +96,7 @@ header
 			background white
 			border 1px solid gris-obscuro
 			border-radius 5px
-			margin 0 0.5em
+			margin 1em 0.5em
 
 					
 			.ficha-cabezera
@@ -111,12 +132,27 @@ header
 
 					&.visitas
 						background rosa-fuerte
+						padding-top 1em
+						&:before
+							font-family iconos
+							font-size 1.5em
+							content "\e610"
 						
 					&.favoritos
 						background naranja
+						padding-top 1em
+						&:before
+							font-family iconos
+							font-size 1.5em
+							content "\e611"
 						
 					&.anuncios 
 						background azul
+						padding-top 1em
+						&:before
+							font-family iconos
+							font-size 1.5em
+							content "\e602"
 			.ficha-cuerpo
 				display block
 				margin 0
@@ -133,7 +169,9 @@ header
 footer
 	background verde-claro
 	margin-top 1em
-	position absolut
+	font-size 1em
+	text-align center
+	padding 1em
 	h3
 		color white
 		margin 0
@@ -143,3 +181,63 @@ footer
 
 .right
 	float right
+
+@media screen and (min-width: 768px)
+	body
+		header
+			.logo
+				img
+					width 80px
+		.contenedor
+			.seccion-cabezera
+				.logo-grande
+					img
+						width 250px
+			
+			.buscador
+				input
+					border 1.5px dashed  rgba(0,0,0,0.2) 
+					border-radius 5px
+					display inline-block
+					font-weight bold
+					font-size 1em
+					height 5px
+					padding 1em
+					margin 2em
+					width 400px
+			.empresas-destacadas
+				.ficha-empresa
+					display inline-block
+					width 45%
+					&:nth-child(odd)
+						margin-left 3%
+						margin-right 2%
+@media screen and (min-width: 1080px)
+			body
+			.btn 
+				&.naranja
+					padding 1em 1.5em
+				header
+					padding 0.8em
+					.logo
+						img
+							width 100px
+						
+				.contenedor
+					text-align center
+					.titulos
+						text-align left
+						
+					.empresas-destacadas
+						 
+						.ficha-empresa
+							font-weight normal
+							display inline-block
+							width 30%
+							&:nth-child(odd)
+								margin-left 1%
+								margin-right 1%
+							.ficha-cabezera
+								img
+									width 80px
+									border 8px solid  rgba(255,255,255,0.3)
